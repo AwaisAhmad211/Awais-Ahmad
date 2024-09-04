@@ -5,7 +5,7 @@ import { BsDribbble } from 'react-icons/bs'
 const Social = () => {
   return (
     <div className="home__social">
-        <a href="" className='home__social-icon' target='_blank'>
+        <a href="https://www.linkedin.com/in/awais-ahmad211" className='home__social-icon' target='_blank'>
             <FaLinkedin color='black'/>
         </a>
 

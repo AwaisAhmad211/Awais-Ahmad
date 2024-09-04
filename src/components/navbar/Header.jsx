@@ -22,37 +22,37 @@ const Header = () => {
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a href="#home" className="nav__link active-link">
+              <a href="#home" className="nav__link active-link" onClick={()=> showMenu(!Toggle)}>
                 <BiHome className="nav__icon" />Home
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="#about" className="nav__link">
+              <a href="#about" className="nav__link" onClick={()=> showMenu(!Toggle)}>
                 <CgProfile className="nav__icon"/>About
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="#skills" className="nav__link">
+              <a href="#skills" className="nav__link" onClick={()=> showMenu(!Toggle)}>
                 <BiFile className="nav__icon"/>Skills
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="#services" className="nav__link">
+              <a href="#services" className="nav__link" onClick={()=> showMenu(!Toggle)}>
                 <BiBriefcase className="nav__icon"/>Services
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="#porfolio" className="nav__link">
+              <a href="#porfolio" className="nav__link" onClick={()=> showMenu(!Toggle)}>
                 <BiFileBlank className="nav__icon"/>Portfolio
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="#contact" className="nav__link">
+              <a href="#contact" className="nav__link" onClick={()=> showMenu(!Toggle)}>
                 <GrPhone className="nav__icon"/>Contact Us
               </a> 
             </li>
