@@ -4,6 +4,7 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Services from './components/Services/Services'
+import Qualification from './components/Qualification/Qualification'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
        <main className="main">
         <Home />
         <About />
+        <Qualification />
         <Skills />
         <Services />
         </main>     

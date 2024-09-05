@@ -21,7 +21,7 @@ const Services = () => {
       <div className="services__content">
         <div>
           <FcServices color="black" className="services__icon"/>
-          <h3 className="services__title">Product <br/> Designer</h3>
+          <h3 className="services__title">Frontend <br/> Development</h3>
         </div>
         <span className="services__button" onClick={()=> toggleTab(1)}>
           View More
@@ -31,7 +31,7 @@ const Services = () => {
         <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
           <div className="services__modal-content">
             <FaTimes className="services__modal-close" onClick={()=> toggleTab(0)} />
-            <h3 className="services__modal-title">Product Designer</h3>
+            <h3 className="services__modal-title">Frontend Development</h3>
             <p className="services__modal-description">
               Service with more then 2 years of work to clients and companies
             </p>
@@ -77,17 +77,17 @@ const Services = () => {
       <div className="services__content">
         <div>
           <BiArrowBack className="services__icon"/>
-          <h3 className="services__title">Ui/Ux <br/> Designer</h3>
+          <h3 className="services__title">Backend <br/> Development</h3>
         </div>
-        <span className="services__button" onClick={()=> toggleTab(1)}>
+        <span className="services__button" onClick={()=> toggleTab(2)}>
           View More
           <BsArrowRightShort className="services__button-icon" />
         </span>
 
-        <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+        <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
           <div className="services__modal-content">
             <FaTimes className="services__modal-close" onClick={()=> toggleTab(0)}/>
-            <h3 className="services__modal-title">Ui/Ux Designer</h3>
+            <h3 className="services__modal-title">Backend Development</h3>
             <p className="services__modal-description">
               Service with more then 2 years of work to clients and companies
             </p>
@@ -133,17 +133,17 @@ const Services = () => {
       <div className="services__content">
         <div>
           <BiEdit className="services__icon"/>
-          <h3 className="services__title">Visual <br/> Designer</h3>
+          <h3 className="services__title">Full Stack <br/>  </h3>
         </div>
-        <span className="services__button" onClick={()=> toggleTab(1)}>
+        <span className="services__button" onClick={()=> toggleTab(3)}>
           View More
           <BsArrowRightShort className="services__button-icon" />
         </span>
 
-        <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+        <div className={toggleState === 3 ? "services__modal active-modal" : "services__modal"}>
           <div className="services__modal-content">
             <FaTimes className="services__modal-close" onClick={()=> toggleTab(0)}/>
-            <h3 className="services__modal-title">Visual Designer</h3>
+            <h3 className="services__modal-title">Full Stack Development</h3>
             <p className="services__modal-description">
               Service with more then 2 years of work to clients and companies
             </p>
