@@ -2,6 +2,7 @@ import React from 'react'
 import { FaLinkedin } from 'react-icons/fa'
 import { BsGithub } from 'react-icons/bs'
 import { BsDribbble } from 'react-icons/bs'
+import { BsFacebook } from 'react-icons/bs'
 const Social = () => {
   return (
     <div className="home__social">
@@ -13,8 +14,8 @@ const Social = () => {
             <BsGithub color='black'/>
         </a>
 
-        <a href="" className='home__social-icon' target='_blank'>
-            <BsDribbble color='black'/>
+        <a href="https://web.facebook.com/oppennminded/" className='home__social-icon' target='_blank'>
+            <BsFacebook color='black'/>
         </a>
     </div>
   )

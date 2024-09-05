@@ -6,6 +6,10 @@ import { FaTimes } from "react-icons/fa";
 import { FcServices } from "react-icons/fc";
 import { BiArrowBack } from "react-icons/bi";
 import { BiEdit } from "react-icons/bi";
+import Frontend from '../../assets/frontend.png'
+import Backend from '../../assets/backend.png'
+import Fullstack from '../../assets/fullstack.png'
+
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -20,7 +24,8 @@ const Services = () => {
        <div className="services__container container grid">
       <div className="services__content">
         <div>
-          <FcServices color="black" className="services__icon"/>
+          <img src={Frontend} alt="frontendImg" className="services__icon" width={30}/>
+          {/* <Frontend color="black" className="services__icon"/> */}
           <h3 className="services__title">Frontend <br/> Development</h3>
         </div>
         <span className="services__button" onClick={()=> toggleTab(1)}>
@@ -76,7 +81,8 @@ const Services = () => {
 
       <div className="services__content">
         <div>
-          <BiArrowBack className="services__icon"/>
+        <img src={Backend} alt="frontendImg" className="services__icon" width={30}/>
+          {/* <BiArrowBack className="services__icon"/> */}
           <h3 className="services__title">Backend <br/> Development</h3>
         </div>
         <span className="services__button" onClick={()=> toggleTab(2)}>
@@ -132,7 +138,8 @@ const Services = () => {
 
       <div className="services__content">
         <div>
-          <BiEdit className="services__icon"/>
+        <img src={Fullstack} alt="frontendImg" className="services__icon" width={30}/>
+          {/* <BiEdit className="services__icon"/> */}
           <h3 className="services__title">Full Stack <br/>  </h3>
         </div>
         <span className="services__button" onClick={()=> toggleTab(3)}>

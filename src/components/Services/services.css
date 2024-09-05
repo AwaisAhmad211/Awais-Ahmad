@@ -9,6 +9,9 @@
     background-color: var(--container-color);
     padding: 6rem 0 2rem 2.5rem;
 }
+.services__content img {
+    object-fit: cover;
+}
 .services__icon {
     display: block;
     font-size: 2rem ;
