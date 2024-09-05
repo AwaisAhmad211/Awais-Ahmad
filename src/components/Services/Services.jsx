@@ -3,9 +3,6 @@ import "./services.css";
 import { BiCheckCircle } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
 import { FaTimes } from "react-icons/fa";
-import { FcServices } from "react-icons/fc";
-import { BiArrowBack } from "react-icons/bi";
-import { BiEdit } from "react-icons/bi";
 import Frontend from '../../assets/frontend.png'
 import Backend from '../../assets/backend.png'
 import Fullstack from '../../assets/fullstack.png'
@@ -140,7 +137,7 @@ const Services = () => {
         <div>
         <img src={Fullstack} alt="frontendImg" className="services__icon" width={30}/>
           {/* <BiEdit className="services__icon"/> */}
-          <h3 className="services__title">Full Stack <br/>  </h3>
+          <h3 className="services__title">Full Stack Development<br/>  </h3>
         </div>
         <span className="services__button" onClick={()=> toggleTab(3)}>
           View More

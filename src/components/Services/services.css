@@ -36,7 +36,7 @@
     transition: 0.3s;
 }
 .services__button:hover .services__button-icon {
-    transform: translateX(00.25rem);
+    transform: translateX(0.25rem);
 }
 
 
