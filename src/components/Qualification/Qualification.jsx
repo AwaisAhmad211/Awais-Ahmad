@@ -3,12 +3,31 @@ import "./qualification.css";
 import { FaGraduationCap } from "react-icons/fa";
 import { BiBriefcase } from "react-icons/bi";
 import { BiCalendar } from "react-icons/bi";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
+  useGSAP(()=> {
+    gsap.from(".left",{
+       y:60,
+       opacity:0,
+       duration:0.5,
+       stagger:0.2,
+       scrollTrigger : ".left"
+    })
+    gsap.from(".right",{
+      y:60,
+      opacity:0,
+      duration:0.5,
+      stagger:0.2,
+      scrollTrigger : ".right"
+   })
+  },[])
   return (
     <section className="qualification section">
       <h2 className="section__title">Qualification</h2>
@@ -44,7 +63,7 @@ const Qualification = () => {
             : "qualification__content"
           }>
             <div className="qualification__data">
-              <div>
+              <div className="left">
                 <h3 className="qualification__title">Web Design</h3>
                 <span className="qualification__subtitle">
                   Spain - Institute
@@ -67,7 +86,7 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
 
-              <div>
+              <div className="right">
                 <h3 className="qualification__title">Web development</h3>
                 <span className="qualification__subtitle">
                   Spain - Institute
@@ -79,7 +98,7 @@ const Qualification = () => {
             </div>
 
             <div className="qualification__data">
-              <div>
+              <div className="left">
                 <h3 className="qualification__title">Web Design</h3>
                 <span className="qualification__subtitle">
                   Spain - Institute
@@ -101,7 +120,7 @@ const Qualification = () => {
             : "qualification__content"
           }>
             <div className="qualification__data">
-              <div>
+              <div className="left">
                 <h3 className="qualification__title">Web Design</h3>
                 <span className="qualification__subtitle">
                   Spain - Institute
@@ -124,7 +143,7 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
 
-              <div>
+              <div className="right">
                 <h3 className="qualification__title">Web development</h3>
                 <span className="qualification__subtitle">
                   Spain - Institute
@@ -136,7 +155,7 @@ const Qualification = () => {
             </div>
 
             <div className="qualification__data">
-              <div>
+              <div className="left">
                 <h3 className="qualification__title">Web Design</h3>
                 <span className="qualification__subtitle">
                   Spain - Institute

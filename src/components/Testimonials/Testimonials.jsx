@@ -8,8 +8,31 @@ import "swiper/css"
 import "swiper/css/pagination"
 // import required modules 
 import { Pagination } from "swiper/modules";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 
 const Testimonials = () => {
+  useGSAP(()=> {
+    gsap.from(".testimonials__img",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      scrollTrigger : ".testimonials__img"
+    })
+    gsap.from(".testimonials__name",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      scrollTrigger : ".testimonials__name"
+    })
+    gsap.from(".testimonials__description",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      scrollTrigger : ".testimonials__description"
+    })
+  },[])
   return (
     <section className="testimonials container section" id="testimonials">
       <h2 className="section__title">My clients say</h2>

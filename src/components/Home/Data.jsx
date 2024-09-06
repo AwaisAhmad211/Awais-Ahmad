@@ -1,6 +1,17 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 import React from 'react'
 
 const Data = () => {
+  useGSAP(()=> {
+    gsap.from(".home__subtitle, .home__title, .home__description, .data-button",{
+      opacity:0,
+      y:100,
+      duration:0.5,
+      delay:0.3,
+      stagger:0.3
+    })
+  },[])
   return (
     <div className="home__data">
         <h1 className="home__title">
@@ -57,7 +68,7 @@ const Data = () => {
         </h1>
         <h3 className="home__subtitle">Web Developer</h3>
         <p className="home__description"> I'm creative developer based in Pakistan, and I'm very passionate and dedicated to my work</p>
-        <a href="#contact" className="button button--flex">Say Hello
+        <a href="#contact" className="button button--flex data-button">Say Hello
         <svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"

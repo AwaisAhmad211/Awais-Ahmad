@@ -6,6 +6,8 @@ import { FaTimes } from "react-icons/fa";
 import Frontend from '../../assets/frontend.png'
 import Backend from '../../assets/backend.png'
 import Fullstack from '../../assets/fullstack.png'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 
 const Services = () => {
@@ -14,12 +16,34 @@ const Services = () => {
   const toggleTab = (index) => {
     setToggleState(index)
   }
+
+  
+  useGSAP(()=> {
+    gsap.from(".services__icon",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      scrollTrigger : ".services__icon"
+    })
+    gsap.from(".services__title",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      scrollTrigger : ".services__title"
+    })
+    gsap.from(".services__button",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      scrollTrigger : ".services__button"
+    })
+  },[])
   return (
     <section className="services section" id="services">
       <h2 className="section__title">Services</h2>
       <span className="section__subtitle">What I offer</span>
        <div className="services__container container grid">
-      <div className="services__content">
+      <div className="services__content ">
         <div>
           <img src={Frontend} alt="frontendImg" className="services__icon" width={30}/>
           {/* <Frontend color="black" className="services__icon"/> */}
@@ -76,7 +100,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="services__content">
+      <div className="services__content ">
         <div>
         <img src={Backend} alt="frontendImg" className="services__icon" width={30}/>
           {/* <BiArrowBack className="services__icon"/> */}
@@ -133,7 +157,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="services__content">
+      <div className="services__content ">
         <div>
         <img src={Fullstack} alt="frontendImg" className="services__icon" width={30}/>
           {/* <BiEdit className="services__icon"/> */}

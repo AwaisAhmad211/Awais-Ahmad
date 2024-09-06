@@ -8,6 +8,8 @@ import { GrPhone } from "react-icons/gr";
 import { BiFileBlank } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 
 const Header = () => {
@@ -21,6 +23,23 @@ const Header = () => {
 /*=============== Toggle Menu ===============*/
   const [Toggle, showMenu] = useState(false) 
   const [activeNav, setActiveNav] = useState("#home");
+
+  useGSAP(()=> {
+    gsap.from(".nav__logo",{
+      y:-100,
+      opacity:0,
+      duration:0.5,
+      delay:0.3
+    })
+    gsap.from(".nav__item",{
+      y:-100,
+      opacity:0,
+      duration:0.5,
+      stagger:0.1,
+      delay:0.3
+    })
+  },[])
+
   return (
     <header className="header">
       <nav className="nav container">

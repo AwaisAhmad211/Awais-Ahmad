@@ -4,8 +4,54 @@ import { BsArrowRightShort } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsMessenger } from "react-icons/bs";
 import { BiMailSend } from "react-icons/bi";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Contact = () => {
+  useGSAP(()=> {
+    gsap.from(".contact__card-icon",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      stagger:0.1,
+      scrollTrigger : ".contact__card-icon"
+    })
+    gsap.from(".contact__card-title",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      stagger:0.1,
+      scrollTrigger : ".contact__card-title"
+    })
+    gsap.from(".contact__card-data",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      stagger:0.1,
+      scrollTrigger : ".contact__card-data"
+    })
+    gsap.from(".contact__button",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      stagger:0.1,
+      scrollTrigger : ".contact__button"
+    })
+    gsap.from(".contact__form-div",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      stagger:0.1,
+      scrollTrigger : ".contact__form-div"
+    })
+    gsap.from(".contact-button",{
+      y:150,
+      opacity:0,
+      duration:0.5,
+      stagger:0.1,
+      scrollTrigger : ".contact__form-area"
+    })
+  },[])
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -100,7 +146,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="button button--flex">
+            <button className="button button--flex contact-button">
               Send Message
               <svg
                 className="button__icon"

@@ -3,8 +3,29 @@ import './about.css'
 import AboutImg from "../../assets/about.jpg"
 import CV from "../../assets/Awais.Ahmad.pdf" 
 import Info from './Info'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+  useGSAP(()=> {
+    gsap.from(".about__img",{
+      opacity:0.5,
+      scale:0.8,
+      duration:0.5,
+      delay:0.3,
+      scrollTrigger : ".about__img"
+    })
+    gsap.from(".about__description, .cv-button",{
+      opacity:0,
+      y:100,
+      duration:0.5,
+      delay:0.3,
+      stagger:0.3,
+      scrollTrigger : ".about__description, .cv-button"
+    })
+  },[])
   return (
     <section className="about section" id="about">
         <h2 className="section__title">About Me</h2>
@@ -16,7 +37,7 @@ const About = () => {
               <div className="about__data">
                    <Info />
                    <p className='about__description'>Full stack developer, I create web pages with best performance, I have years of experience and many clients are happy with the projects carried out.</p>
-                   <a download="" href={CV} className='button button--flex'>Download CV
+                   <a download="" href={CV} className='button button--flex cv-button'>Download CV
                    <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
