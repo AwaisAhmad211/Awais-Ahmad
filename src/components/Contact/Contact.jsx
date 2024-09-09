@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef , useState} from 'react';
+import emailjs from '@emailjs/browser';
 import './contact.css'
 import { BsArrowRightShort } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
@@ -7,7 +8,30 @@ import { BiMailSend } from "react-icons/bi";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
+
 const Contact = () => {
+
+  const form = useRef();
+  const [error,setError] = useState(false);
+  const [success,setSuccess] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_57pnb4b', 'template_8sy0i3p', form.current, {
+        publicKey: 'bUrGgnsLXMM9X5oxG',
+      })
+      .then(
+        (result) => {
+          setSuccess(true)
+        },
+        (error) => {
+          setError(true)
+        },
+      );
+  };
+
   useGSAP(()=> {
     gsap.from(".contact__card-icon",{
       y:150,
@@ -110,13 +134,14 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Write me your project</h3>
 
-          <form className="contact__form">
+          <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
               <label htmlFor="name" className="contact__form-tag">
                 Name
               </label>
               <input
-                autoComplete="true"
+                autoComplete="xyz"
+                required
                 type="text"
                 name="name"
                 id="name"
@@ -130,7 +155,8 @@ const Contact = () => {
                 Email
               </label>
               <input
-                autoComplete="true"
+                autoComplete="xyz@gmail.com"
+                required
                 type="email"
                 name="email"
                 id="email"
@@ -144,13 +170,17 @@ const Contact = () => {
                 Project
               </label>
               <textarea
+                required
                 name="project"
                 id="project"
                 className="contact__form-input"
                 placeholder="Enter Your Project"
               ></textarea>
             </div>
-
+               <div className='result_error'>
+            {error && "Something went wronge,please try again!"}
+            {success && "Successfuly sent"}
+            </div>
             <button className="button button--flex contact-button">
               Send Message
               <svg
@@ -171,6 +201,7 @@ const Contact = () => {
                 ></path>
               </svg>
             </button>
+           
           </form>
         </div>
       </div>

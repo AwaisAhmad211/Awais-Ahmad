@@ -37,6 +37,9 @@
     display: block;
     margin-bottom: var(--mb-0-75);
 }
+.result_error{
+    margin-bottom: var(--mb-0-75);
+}
 .contact__button {
     color: var(--text-color);
     font-size: var(--small-font-size);
