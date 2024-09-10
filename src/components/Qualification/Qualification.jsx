@@ -28,6 +28,7 @@ const Qualification = () => {
       scrollTrigger : ".right"
    })
   },[])
+
   return (
     <section className="qualification section">
       <h2 className="section__title">Qualification</h2>
@@ -64,12 +65,12 @@ const Qualification = () => {
           }>
             <div className="qualification__data">
               <div className="left">
-                <h3 className="qualification__title">Web Design</h3>
+                <h3 className="qualification__title">BS Software Engineering</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Virtal University - Pakistan
                 </span>
                 <div className="qualification__calender">
-                  <BiCalendar /> 2021 - present
+                  <BiCalendar /> 2024 - present
                 </div>
               </div>
               <div>
@@ -89,22 +90,22 @@ const Qualification = () => {
               <div className="right">
                 <h3 className="qualification__title">Web development</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  SmartSkills - Institute
                 </span>
                 <div className="qualification__calender">
-                  <BiCalendar /> 2021 - present
+                  <BiCalendar /> 2022 - present
                 </div>
               </div>
             </div>
 
             <div className="qualification__data">
               <div className="left">
-                <h3 className="qualification__title">Web Design</h3>
+                <h3 className="qualification__title">Intermediate</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Government College Boys - KRK
                 </span>
                 <div className="qualification__calender">
-                  <BiCalendar /> 2021 - present
+                  <BiCalendar /> 2022 - 2024
                 </div>
               </div>
               <div>
@@ -121,9 +122,9 @@ const Qualification = () => {
           }>
             <div className="qualification__data">
               <div className="left">
-                <h3 className="qualification__title">Web Design</h3>
+                <h3 className="qualification__title">Backend</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                SmartSkills - Institute
                 </span>
                 <div className="qualification__calender">
                   <BiCalendar /> 2023 - present
@@ -144,9 +145,9 @@ const Qualification = () => {
               </div>
 
               <div className="right">
-                <h3 className="qualification__title">Web development</h3>
+                <h3 className="qualification__title">Frontend</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                SmartSkills - Institute
                 </span>
                 <div className="qualification__calender">
                   <BiCalendar /> 2023 - present
@@ -158,10 +159,10 @@ const Qualification = () => {
               <div className="left">
                 <h3 className="qualification__title">Web Design</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  SmartSkills - Institute
                 </span>
                 <div className="qualification__calender">
-                  <BiCalendar /> 2023 - present
+                  <BiCalendar /> 2022 - 2023
                 </div>
               </div>
               <div>

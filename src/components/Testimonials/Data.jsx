@@ -1,22 +1,22 @@
-import Image1 from "../../assets/testimonial1.png"
-import Image2 from "../../assets/testimonial2.png"
-import Image3 from "../../assets/testimonial3.png"
+import Image1 from "../../assets/testimonial1.jpg"
+import Image2 from "../../assets/testimonial2.jpg"
+import Image3 from "../../assets/testimonial3.jpg"
 
 
 export const Data = [
     {
       id: 1,
       image: Image1,
-      title: "Jhon Doe",
+      title: "David Chen",
       description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "Exceptional work! The project was handled with great attention to detail, delivering outstanding results at every stage.",
     },
     {
       id: 2,
       image: Image2,
       title: "Harry Clinton",
       description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "Fantastic execution! Each phase of the project was completed with precision and professionalism, leading to highly satisfactory outcomes.",
     },
     {
       id: 3,

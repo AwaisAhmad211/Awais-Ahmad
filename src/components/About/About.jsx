@@ -36,7 +36,7 @@ const About = () => {
 
               <div className="about__data">
                    <Info />
-                   <p className='about__description'>Full stack developer, I create web pages with best performance, I have years of experience and many clients are happy with the projects carried out.</p>
+                   <p className='about__description'>As a Full Stack Developer with a focus on the MERN stack (MongoDB, Express.js, React, Node.js), I bring both practical experience and academic knowledge to the table. Currently studying Software Engineering, I am applying my learning to create dynamic web applications, combining front-end design with robust back-end development. I excel in crafting responsive user interfaces using React and building scalable server-side solutions with Node.js and Express.js. My academic background complements my hands-on skills, enabling me to tackle complex problems and deliver integrated, high-quality solutions.</p>
                    <a download="" href={CV} className='button button--flex cv-button'>Download CV
                    <svg
                 className="button__icon"

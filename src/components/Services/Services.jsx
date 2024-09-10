@@ -17,7 +17,6 @@ const Services = () => {
     setToggleState(index)
   }
 
-  
   useGSAP(()=> {
     gsap.from(".services__icon",{
       y:150,
@@ -123,26 +122,28 @@ const Services = () => {
               <li className="services__modal-service">
                 <BiCheckCircle className="services__modal-icon" />
                 <p className="services__modal-info">
-                  I develope the user interface
+                Building robust server-side logic for web applications
+
                 </p>
               </li>
 
               <li className="services__modal-service">
                 <BiCheckCircle className="services__modal-icon" />
-                <p className="services__modal-info">Web page development.</p>
-              </li>
-
-              <li className="services__modal-service">
-                <BiCheckCircle className="services__modal-icon" />
-                <p className="services__modal-info">
-                  I create ux element interactions.
+                <p className="services__modal-info">Designing and implementing scalable database architectures
                 </p>
               </li>
 
               <li className="services__modal-service">
                 <BiCheckCircle className="services__modal-icon" />
                 <p className="services__modal-info">
-                  I position your company brand.
+                Integrating third-party APIs for enhanced functionality
+                </p>
+              </li>
+
+              <li className="services__modal-service">
+                <BiCheckCircle className="services__modal-icon" />
+                <p className="services__modal-info">
+                Developing secure and efficient data storage solutions for companies
                 </p>
               </li>
 
@@ -180,33 +181,33 @@ const Services = () => {
               <li className="services__modal-service">
                 <BiCheckCircle className="services__modal-icon" />
                 <p className="services__modal-info">
-                  I develope the user interface
+                I create seamless web applications from user interface to server.
                 </p>
               </li>
 
               <li className="services__modal-service">
                 <BiCheckCircle className="services__modal-icon" />
-                <p className="services__modal-info">Web page development.</p>
+                <p className="services__modal-info">Expert in designing engaging front-ends and robust back-end systems.</p>
               </li>
 
               <li className="services__modal-service">
                 <BiCheckCircle className="services__modal-icon" />
                 <p className="services__modal-info">
-                  I create ux element interactions.
-                </p>
-              </li>
-
-              <li className="services__modal-service">
-                <BiCheckCircle className="services__modal-icon" />
-                <p className="services__modal-info">
-                  I position your company brand.
+                I integrate dynamic features with efficient database and API solutions.
                 </p>
               </li>
 
               <li className="services__modal-service">
                 <BiCheckCircle className="services__modal-icon" />
                 <p className="services__modal-info">
-                  Design and mockups of products for companies.
+                Transforming complex requirements into intuitive, high-performance digital products.
+                </p>
+              </li>
+
+              <li className="services__modal-service">
+                <BiCheckCircle className="services__modal-icon" />
+                <p className="services__modal-info">
+                Let’s elevate your web presence with tailored, full stack expertise.
                 </p>
               </li>
             </ul>
