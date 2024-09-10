@@ -29,11 +29,17 @@
     padding: 1.25rem;
     border-radius: 1rem;
 }
-.work__img {
+.work__card img {
     width: 295px ;
     border-radius: 1rem;
     margin-bottom: var(--mb-1);
+    object-fit: cover;
 }
+/* .work__img {
+    width: 295px ;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+} */
 .work__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
