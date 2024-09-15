@@ -65,7 +65,7 @@ const Qualification = () => {
           }>
             <div className="qualification__data">
               <div className="left">
-                <h3 className="qualification__title">BS Software Engineering</h3>
+                <h3 className="qualification__title">BS Software<br></br> Engineering</h3>
                 <span className="qualification__subtitle">
                   Virtal University - Pakistan
                 </span>
@@ -102,7 +102,7 @@ const Qualification = () => {
               <div className="left">
                 <h3 className="qualification__title">Intermediate</h3>
                 <span className="qualification__subtitle">
-                  Government College Boys - KRK
+                  Government College<br></br> Boys - KRK
                 </span>
                 <div className="qualification__calender">
                   <BiCalendar /> 2022 - 2024
