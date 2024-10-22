@@ -49,6 +49,7 @@ export const projectsData = [
       image: Work6,
       title: "Lazarev",
       category: "Frontend",
+      href: "https://awaisahmad211.github.io/Lazarev-Replica/"
     },
     {
       id: 7,
