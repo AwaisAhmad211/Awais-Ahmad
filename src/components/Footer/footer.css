@@ -28,15 +28,16 @@
     column-gap: 1.25rem;
 }
 .footer__social-link {
-    background-color: var(--title-color);
+    background-color: rgba(0, 0, 0, 0.295);
     color: var(--container-color);
     font-size: 1.125rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
     display: inline-flex;
+    transition: all 0.3s ease;
 }
 .footer__social-link:hover {
-    background-color: rgba(0, 0, 0, 0.295);
+    transform: scale(1.1);
 }
 .footer__copy{
     display: block;

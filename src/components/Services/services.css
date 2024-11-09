@@ -9,6 +9,9 @@
     background-color: var(--container-color);
     padding: 6rem 0 2rem 2.5rem;
 }
+.services__content:hover{
+    background-color: #f0f0f0;
+}
 .services__content img {
     object-fit: cover;
 }

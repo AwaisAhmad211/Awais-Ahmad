@@ -19,6 +19,7 @@
 }
 .home__social-icon:hover{
     color: var(--title-color-dark);
+    transform: scale(1.05);
 }
 .home__title{
     font-size: var(--big-font-size);

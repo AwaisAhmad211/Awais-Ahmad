@@ -20,14 +20,14 @@ export const projectsData = [
       id: 2,
       image: Work2,
       title: "Chess Game",
-      category: "Backend",
+      category: "Fullstack",
       href: "https://github.com/AwaisAhmad211/Chess-Game"
     },
     {
       id: 3,
       image: Work3,
       title: "3D Portfolio",
-      category: "Backend",
+      category: "Fullstack",
       href: "https://hye-six.vercel.app/"
     },
     {
@@ -41,7 +41,7 @@ export const projectsData = [
       id: 5,
       image: Work5,
       title: "Animated Portfolio",
-      category: "Frontend",
+      category: "Fullstack",
       href: "https://my-portfolio-six-xi-78.vercel.app/"
     },
     {
@@ -69,6 +69,6 @@ export const projectsData = [
         name: "Frontend",
     },
     {
-        name: "Backend",
+        name: "Fullstack",
     },
   ]
