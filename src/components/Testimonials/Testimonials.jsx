@@ -15,19 +15,19 @@ import gsap from "gsap";
 const Testimonials = () => {
   useGSAP(()=> {
     gsap.from(".testimonials__img",{
-      y:150,
+      y:100,
       opacity:0,
       duration:0.5,
       scrollTrigger : ".testimonials__img"
     })
     gsap.from(".testimonials__name",{
-      y:150,
+      y:100,
       opacity:0,
       duration:0.5,
       scrollTrigger : ".testimonials__name"
     })
     gsap.from(".testimonials__description",{
-      y:150,
+      y:100,
       opacity:0,
       duration:0.5,
       scrollTrigger : ".testimonials__description"
