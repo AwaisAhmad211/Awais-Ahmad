@@ -56,7 +56,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer__copy">
-          &#169; Crypticalcoder. All rigths reserved
+          Made with <span style={{color: "red",fontSize:"medium-font-size"}}>❤</span> by Awais Ahmad  &#169; 2024
         </div>
       </div>
     </footer>
