@@ -56,7 +56,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer__copy">
-          Made with <span style={{color: "red",fontSize:"medium-font-size"}}>❤</span> by Awais Ahmad  &#169; 2024
+          Made with <span style={{color: "red",fontSize:"20px"}}>❤</span> by Awais Ahmad  &#169; 2024
         </div>
       </div>
     </footer>
