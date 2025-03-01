@@ -122,7 +122,7 @@ const Contact = () => {
 
               <a
                 target="_blank"
-                href="https://m.me/openminded"
+                href="https://www.messenger.com/t/100065232211666"
                 className="contact__button"
               >
                 Write me <BsArrowRightShort className="contact__button-icon"/>
